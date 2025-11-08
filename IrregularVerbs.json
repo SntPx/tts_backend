@@ -1,0 +1,1402 @@
+[
+  {
+    "bv": "abide",
+    "preterit": "abode",
+    "ppart": "abode",
+    "fr_tran": "se conformer à",
+    "level": 3
+  },
+  {
+    "bv": "arise",
+    "preterit": "arose",
+    "ppart": "arisen",
+    "fr_tran": "survenir",
+    "level": 2
+  },
+  {
+    "bv": "awake",
+    "preterit": "awoke",
+    "ppart": "awoken",
+    "fr_tran": "s'éveiller",
+    "level": 2
+  },
+  {
+    "bv": "be",
+    "preterit": "was/were",
+    "ppart": "been",
+    "fr_tran": "être",
+    "level": 1
+  },
+  {
+    "bv": "bear",
+    "preterit": "bore",
+    "ppart": "borne",
+    "fr_tran": "porter",
+    "level": 2
+  },
+  {
+    "bv": "beat",
+    "preterit": "beat",
+    "ppart": "beaten",
+    "fr_tran": "battre",
+    "level": 1
+  },
+  {
+    "bv": "become",
+    "preterit": "became",
+    "ppart": "become",
+    "fr_tran": "devenir",
+    "level": 1
+  },
+  {
+    "bv": "befall",
+    "preterit": "befell",
+    "ppart": "befallen",
+    "fr_tran": "advenir",
+    "level": 3
+  },
+  {
+    "bv": "beget",
+    "preterit": "begot",
+    "ppart": "begotten",
+    "fr_tran": "engendrer",
+    "level": 3
+  },
+  {
+    "bv": "begin",
+    "preterit": "began",
+    "ppart": "begun",
+    "fr_tran": "commencer",
+    "level": 1
+  },
+  {
+    "bv": "behold",
+    "preterit": "beheld",
+    "ppart": "beheld",
+    "fr_tran": "contempler",
+    "level": 3
+  },
+  {
+    "bv": "bend",
+    "preterit": "bent",
+    "ppart": "bent",
+    "fr_tran": "courber",
+    "level": 2
+  },
+  {
+    "bv": "bereave",
+    "preterit": "bereft",
+    "ppart": "bereft",
+    "fr_tran": "priver",
+    "level": 3
+  },
+  {
+    "bv": "beseech",
+    "preterit": "besought",
+    "ppart": "besought",
+    "fr_tran": "implorer",
+    "level": 3
+  },
+  {
+    "bv": "beset",
+    "preterit": "beset",
+    "ppart": "beset",
+    "fr_tran": "assaillir",
+    "level": 3
+  },
+  {
+    "bv": "bestride",
+    "preterit": "bestrode",
+    "ppart": "bestridden",
+    "fr_tran": "enfourcher",
+    "level": 3
+  },
+  {
+    "bv": "bet",
+    "preterit": "bet",
+    "ppart": "bet",
+    "fr_tran": "parier",
+    "level": 1
+  },
+  {
+    "bv": "bid",
+    "preterit": "bade/bid",
+    "ppart": "bid/bidden",
+    "fr_tran": "offrir/ordonner",
+    "level": 2
+  },
+  {
+    "bv": "bind",
+    "preterit": "bound",
+    "ppart": "bound",
+    "fr_tran": "lier",
+    "level": 2
+  },
+  {
+    "bv": "bite",
+    "preterit": "bit",
+    "ppart": "bitten",
+    "fr_tran": "mordre",
+    "level": 1
+  },
+  {
+    "bv": "bleed",
+    "preterit": "bled",
+    "ppart": "bled",
+    "fr_tran": "saigner",
+    "level": 1
+  },
+  {
+    "bv": "blow",
+    "preterit": "blew",
+    "ppart": "blown",
+    "fr_tran": "souffler",
+    "level": 1
+  },
+  {
+    "bv": "break",
+    "preterit": "broke",
+    "ppart": "broken",
+    "fr_tran": "casser",
+    "level": 1
+  },
+  {
+    "bv": "breed",
+    "preterit": "bred",
+    "ppart": "bred",
+    "fr_tran": "élever",
+    "level": 2
+  },
+  {
+    "bv": "bring",
+    "preterit": "brought",
+    "ppart": "brought",
+    "fr_tran": "apporter",
+    "level": 1
+  },
+  {
+    "bv": "broadcast",
+    "preterit": "broadcast",
+    "ppart": "broadcast",
+    "fr_tran": "diffuser",
+    "level": 2
+  },
+  {
+    "bv": "build",
+    "preterit": "built",
+    "ppart": "built",
+    "fr_tran": "construire",
+    "level": 1
+  },
+  {
+    "bv": "burn",
+    "preterit": "burnt",
+    "ppart": "burnt",
+    "fr_tran": "brûler",
+    "level": 1
+  },
+  {
+    "bv": "burst",
+    "preterit": "burst",
+    "ppart": "burst",
+    "fr_tran": "éclater",
+    "level": 1
+  },
+  {
+    "bv": "buy",
+    "preterit": "bought",
+    "ppart": "bought",
+    "fr_tran": "acheter",
+    "level": 1
+  },
+  {
+    "bv": "cast",
+    "preterit": "cast",
+    "ppart": "cast",
+    "fr_tran": "jeter",
+    "level": 2
+  },
+  {
+    "bv": "catch",
+    "preterit": "caught",
+    "ppart": "caught",
+    "fr_tran": "attraper",
+    "level": 1
+  },
+  {
+    "bv": "chide",
+    "preterit": "chid",
+    "ppart": "chid/chidden",
+    "fr_tran": "réprimander",
+    "level": 3
+  },
+  {
+    "bv": "choose",
+    "preterit": "chose",
+    "ppart": "chosen",
+    "fr_tran": "choisir",
+    "level": 1
+  },
+  {
+    "bv": "cleave",
+    "preterit": "cleft/clove",
+    "ppart": "cleft/cloven",
+    "fr_tran": "fendre",
+    "level": 3
+  },
+  {
+    "bv": "cling",
+    "preterit": "clung",
+    "ppart": "clung",
+    "fr_tran": "s'accrocher",
+    "level": 2
+  },
+  {
+    "bv": "come",
+    "preterit": "came",
+    "ppart": "come",
+    "fr_tran": "venir",
+    "level": 1
+  },
+  {
+    "bv": "cost",
+    "preterit": "cost",
+    "ppart": "cost",
+    "fr_tran": "coûter",
+    "level": 1
+  },
+  {
+    "bv": "creep",
+    "preterit": "crept",
+    "ppart": "crept",
+    "fr_tran": "ramper",
+    "level": 2
+  },
+  {
+    "bv": "cut",
+    "preterit": "cut",
+    "ppart": "cut",
+    "fr_tran": "couper",
+    "level": 1
+  },
+  {
+    "bv": "deal",
+    "preterit": "dealt",
+    "ppart": "dealt",
+    "fr_tran": "distribuer",
+    "level": 2
+  },
+  {
+    "bv": "dig",
+    "preterit": "dug",
+    "ppart": "dug",
+    "fr_tran": "creuser",
+    "level": 1
+  },
+  {
+    "bv": "dive",
+    "preterit": "dove",
+    "ppart": "dived",
+    "fr_tran": "plonger",
+    "level": 2
+  },
+  {
+    "bv": "do",
+    "preterit": "did",
+    "ppart": "done",
+    "fr_tran": "faire",
+    "level": 1
+  },
+  {
+    "bv": "draw",
+    "preterit": "drew",
+    "ppart": "drawn",
+    "fr_tran": "dessiner",
+    "level": 1
+  },
+  {
+    "bv": "dream",
+    "preterit": "dreamt",
+    "ppart": "dreamt",
+    "fr_tran": "rêver",
+    "level": 1
+  },
+  {
+    "bv": "drink",
+    "preterit": "drank",
+    "ppart": "drunk",
+    "fr_tran": "boire",
+    "level": 1
+  },
+  {
+    "bv": "drive",
+    "preterit": "drove",
+    "ppart": "driven",
+    "fr_tran": "conduire",
+    "level": 1
+  },
+  {
+    "bv": "dwell",
+    "preterit": "dwelt",
+    "ppart": "dwelt",
+    "fr_tran": "résider",
+    "level": 3
+  },
+  {
+    "bv": "eat",
+    "preterit": "ate",
+    "ppart": "eaten",
+    "fr_tran": "manger",
+    "level": 1
+  },
+  {
+    "bv": "fall",
+    "preterit": "fell",
+    "ppart": "fallen",
+    "fr_tran": "tomber",
+    "level": 1
+  },
+  {
+    "bv": "feed",
+    "preterit": "fed",
+    "ppart": "fed",
+    "fr_tran": "nourrir",
+    "level": 1
+  },
+  {
+    "bv": "feel",
+    "preterit": "felt",
+    "ppart": "felt",
+    "fr_tran": "sentir/ressentir",
+    "level": 1
+  },
+  {
+    "bv": "fight",
+    "preterit": "fought",
+    "ppart": "fought",
+    "fr_tran": "combattre/se battre",
+    "level": 1
+  },
+  {
+    "bv": "find",
+    "preterit": "found",
+    "ppart": "found",
+    "fr_tran": "trouver",
+    "level": 1
+  },
+  {
+    "bv": "fit",
+    "preterit": "fit/fitted",
+    "ppart": "fit/fitted",
+    "fr_tran": "correspondre",
+    "level": 2
+  },
+  {
+    "bv": "flee",
+    "preterit": "fled",
+    "ppart": "fled",
+    "fr_tran": "fuir",
+    "level": 2
+  },
+  {
+    "bv": "fling",
+    "preterit": "flung",
+    "ppart": "flung",
+    "fr_tran": "lancer",
+    "level": 2
+  },
+  {
+    "bv": "fly",
+    "preterit": "flew",
+    "ppart": "flown",
+    "fr_tran": "voler",
+    "level": 1
+  },
+  {
+    "bv": "forbear",
+    "preterit": "forbore",
+    "ppart": "forborne",
+    "fr_tran": "s'abstenir",
+    "level": 3
+  },
+  {
+    "bv": "forbid",
+    "preterit": "forbade",
+    "ppart": "forbidden",
+    "fr_tran": "interdire",
+    "level": 2
+  },
+  {
+    "bv": "forecast",
+    "preterit": "forecast",
+    "ppart": "forecast",
+    "fr_tran": "prévoir",
+    "level": 2
+  },
+  {
+    "bv": "forget",
+    "preterit": "forgot",
+    "ppart": "forgotten",
+    "fr_tran": "oublier",
+    "level": 1
+  },
+  {
+    "bv": "forgo",
+    "preterit": "forewent",
+    "ppart": "foregone",
+    "fr_tran": "précéder",
+    "level": 3
+  },
+  {
+    "bv": "forgive",
+    "preterit": "forgave",
+    "ppart": "forgiven",
+    "fr_tran": "pardonner",
+    "level": 1
+  },
+  {
+    "bv": "forsake",
+    "preterit": "forsook",
+    "ppart": "forsaken",
+    "fr_tran": "abandonner",
+    "level": 2
+  },
+  {
+    "bv": "freeze",
+    "preterit": "froze",
+    "ppart": "frozen",
+    "fr_tran": "geler",
+    "level": 1
+  },
+  {
+    "bv": "get",
+    "preterit": "got",
+    "ppart": "gotten",
+    "fr_tran": "obtenir",
+    "level": 1
+  },
+  {
+    "bv": "gild",
+    "preterit": "gilded",
+    "ppart": "gilded/gilt",
+    "fr_tran": "dorer",
+    "level": 3
+  },
+  {
+    "bv": "give",
+    "preterit": "gave",
+    "ppart": "given",
+    "fr_tran": "donner",
+    "level": 1
+  },
+  {
+    "bv": "go",
+    "preterit": "went",
+    "ppart": "gone",
+    "fr_tran": "aller",
+    "level": 1
+  },
+  {
+    "bv": "grind",
+    "preterit": "ground",
+    "ppart": "ground",
+    "fr_tran": "moudre",
+    "level": 2
+  },
+  {
+    "bv": "grow",
+    "preterit": "grew",
+    "ppart": "grown",
+    "fr_tran": "pousser/grandir",
+    "level": 1
+  },
+  {
+    "bv": "hang",
+    "preterit": "hung",
+    "ppart": "hung",
+    "fr_tran": "pendre",
+    "level": 2
+  },
+  {
+    "bv": "have",
+    "preterit": "had",
+    "ppart": "had",
+    "fr_tran": "avoir",
+    "level": 1
+  },
+  {
+    "bv": "hear",
+    "preterit": "heard",
+    "ppart": "heard",
+    "fr_tran": "entendre",
+    "level": 1
+  },
+  {
+    "bv": "hew",
+    "preterit": "hewed",
+    "ppart": "hewed/hewn",
+    "fr_tran": "tailler",
+    "level": 3
+  },
+  {
+    "bv": "hide",
+    "preterit": "hid",
+    "ppart": "hidden",
+    "fr_tran": "(se) cacher",
+    "level": 1
+  },
+  {
+    "bv": "hit",
+    "preterit": "hit",
+    "ppart": "hit",
+    "fr_tran": "frapper",
+    "level": 1
+  },
+  {
+    "bv": "hold",
+    "preterit": "held",
+    "ppart": "held",
+    "fr_tran": "tenir",
+    "level": 1
+  },
+  {
+    "bv": "hurt",
+    "preterit": "hurt",
+    "ppart": "hurt",
+    "fr_tran": "blesser",
+    "level": 1
+  },
+  {
+    "bv": "keep",
+    "preterit": "kept",
+    "ppart": "kept",
+    "fr_tran": "garder",
+    "level": 1
+  },
+  {
+    "bv": "kneel",
+    "preterit": "knelt",
+    "ppart": "knelt",
+    "fr_tran": "s'agenouiller",
+    "level": 2
+  },
+  {
+    "bv": "knit",
+    "preterit": "knit",
+    "ppart": "knit",
+    "fr_tran": "tricoter",
+    "level": 2
+  },
+  {
+    "bv": "know",
+    "preterit": "knew",
+    "ppart": "known",
+    "fr_tran": "savoir/connaître",
+    "level": 1
+  },
+  {
+    "bv": "lay",
+    "preterit": "laid",
+    "ppart": "laid",
+    "fr_tran": "étendre",
+    "level": 1
+  },
+  {
+    "bv": "lead",
+    "preterit": "led",
+    "ppart": "led",
+    "fr_tran": "mener",
+    "level": 1
+  },
+  {
+    "bv": "lean",
+    "preterit": "leant",
+    "ppart": "leant",
+    "fr_tran": "appuyer",
+    "level": 2
+  },
+  {
+    "bv": "leap",
+    "preterit": "lept",
+    "ppart": "lept",
+    "fr_tran": "sauter",
+    "level": 2
+  },
+  {
+    "bv": "learn",
+    "preterit": "learned",
+    "ppart": "learned",
+    "fr_tran": "apprendre",
+    "level": 1
+  },
+  {
+    "bv": "leave",
+    "preterit": "left",
+    "ppart": "left",
+    "fr_tran": "quitter",
+    "level": 1
+  },
+  {
+    "bv": "lend",
+    "preterit": "lent",
+    "ppart": "lent",
+    "fr_tran": "prêter",
+    "level": 1
+  },
+  {
+    "bv": "let",
+    "preterit": "let",
+    "ppart": "let",
+    "fr_tran": "laisser",
+    "level": 1
+  },
+  {
+    "bv": "lie",
+    "preterit": "lay",
+    "ppart": "lain",
+    "fr_tran": "être allongé/être couché/s’allonger",
+    "level": 1
+  },
+  {
+    "bv": "light",
+    "preterit": "lit",
+    "ppart": "lighted",
+    "fr_tran": "allumer/éclairer",
+    "level": 1
+  },
+  {
+    "bv": "lose",
+    "preterit": "lost",
+    "ppart": "lost",
+    "fr_tran": "perdre",
+    "level": 1
+  },
+  {
+    "bv": "make",
+    "preterit": "made",
+    "ppart": "made",
+    "fr_tran": "faire/fabriquer",
+    "level": 1
+  },
+  {
+    "bv": "mean",
+    "preterit": "meant",
+    "ppart": "meant",
+    "fr_tran": "signifier/vouloir dire",
+    "level": 1
+  },
+  {
+    "bv": "meet",
+    "preterit": "met",
+    "ppart": "met",
+    "fr_tran": "rencontrer",
+    "level": 1
+  },
+  {
+    "bv": "mislead",
+    "preterit": "mislead",
+    "ppart": "mislead",
+    "fr_tran": "induire en erreur",
+    "level": 2
+  },
+  {
+    "bv": "misspell",
+    "preterit": "misspelt",
+    "ppart": "misspelt",
+    "fr_tran": "mal orthographier/mal écrire",
+    "level": 2
+  },
+  {
+    "bv": "mistake",
+    "preterit": "mistook",
+    "ppart": "mistaken",
+    "fr_tran": "se tromper",
+    "level": 2
+  },
+  {
+    "bv": "mow",
+    "preterit": "mowed",
+    "ppart": "mowed/mown",
+    "fr_tran": "tondre",
+    "level": 2
+  },
+  {
+    "bv": "overcome",
+    "preterit": "overcame",
+    "ppart": "overcome",
+    "fr_tran": "surmonter",
+    "level": 2
+  },
+  {
+    "bv": "overdo",
+    "preterit": "overdid",
+    "ppart": "overdone",
+    "fr_tran": "exagérer",
+    "level": 3
+  },
+  {
+    "bv": "overhang",
+    "preterit": "overhung",
+    "ppart": "overhung",
+    "fr_tran": "surplomber",
+    "level": 3
+  },
+  {
+    "bv": "overtake",
+    "preterit": "overtook",
+    "ppart": "overtaken",
+    "fr_tran": "dépasser/rattraper",
+    "level": 3
+  },
+  {
+    "bv": "overthrow",
+    "preterit": "overthrew",
+    "ppart": "overthrown",
+    "fr_tran": "renverser",
+    "level": 2
+  },
+  {
+    "bv": "pay",
+    "preterit": "paid",
+    "ppart": "paid",
+    "fr_tran": "payer",
+    "level": 1
+  },
+  {
+    "bv": "plead",
+    "preterit": "pled",
+    "ppart": "pled",
+    "fr_tran": "plaider",
+    "level": "1"
+  },
+  {
+    "bv": "prove",
+    "preterit": "proved",
+    "ppart": "proved/proven",
+    "fr_tran": "prouver",
+    "level": 2
+  },
+  {
+    "bv": "put",
+    "preterit": "put",
+    "ppart": "put",
+    "fr_tran": "mettre",
+    "level": 1
+  },
+  {
+    "bv": "quit",
+    "preterit": "quit",
+    "ppart": "quit",
+    "fr_tran": "quitter",
+    "level": 2
+  },
+  {
+    "bv": "read",
+    "preterit": "read",
+    "ppart": "read",
+    "fr_tran": "lire",
+    "level": 1
+  },
+  {
+    "bv": "rend",
+    "preterit": "rent",
+    "ppart": "rent",
+    "fr_tran": "déchirer",
+    "level": 2
+  },
+  {
+    "bv": "rid",
+    "preterit": "rid",
+    "ppart": "rid",
+    "fr_tran": "débarasser",
+    "level": 2
+  },
+  {
+    "bv": "ride",
+    "preterit": "rode",
+    "ppart": "ridden",
+    "fr_tran": "aller à byciclette/à cheval/à moto",
+    "level": 1
+  },
+  {
+    "bv": "ring",
+    "preterit": "rang",
+    "ppart": "rung",
+    "fr_tran": "sonner",
+    "level": 1
+  },
+  {
+    "bv": "rise",
+    "preterit": "rose",
+    "ppart": "risen",
+    "fr_tran": "se lever/s’élever",
+    "level": 1
+  },
+  {
+    "bv": "run",
+    "preterit": "ran",
+    "ppart": "run",
+    "fr_tran": "courir",
+    "level": 1
+  },
+  {
+    "bv": "saw",
+    "preterit": "sawed",
+    "ppart": "sawn",
+    "fr_tran": "scier",
+    "level": 2
+  },
+  {
+    "bv": "say",
+    "preterit": "said",
+    "ppart": "said",
+    "fr_tran": "dire",
+    "level": 1
+  },
+  {
+    "bv": "see",
+    "preterit": "saw",
+    "ppart": "seen",
+    "fr_tran": "voir",
+    "level": 1
+  },
+  {
+    "bv": "seek",
+    "preterit": "sought",
+    "ppart": "sought",
+    "fr_tran": "chercher",
+    "level": 2
+  },
+  {
+    "bv": "sell",
+    "preterit": "sold",
+    "ppart": "sold",
+    "fr_tran": "vendre",
+    "level": 1
+  },
+  {
+    "bv": "send",
+    "preterit": "sent",
+    "ppart": "sent",
+    "fr_tran": "envoyer",
+    "level": 1
+  },
+  {
+    "bv": "set",
+    "preterit": "set",
+    "ppart": "set",
+    "fr_tran": "mettre",
+    "level": 1
+  },
+  {
+    "bv": "sew",
+    "preterit": "sewed",
+    "ppart": "sewn",
+    "fr_tran": "coudre",
+    "level": 2
+  },
+  {
+    "bv": "shake",
+    "preterit": "shook",
+    "ppart": "shaken",
+    "fr_tran": "trembler/secouer",
+    "level": 2
+  },
+  {
+    "bv": "shave",
+    "preterit": "shaved",
+    "ppart": "shaven",
+    "fr_tran": "raser",
+    "level": 2
+  },
+  {
+    "bv": "shear",
+    "preterit": "shore",
+    "ppart": "shorn",
+    "fr_tran": "cisailler/tondre",
+    "level": 3
+  },
+  {
+    "bv": "shed",
+    "preterit": "shed",
+    "ppart": "shed",
+    "fr_tran": "perdre/verser",
+    "level": 2
+  },
+  {
+    "bv": "shine",
+    "preterit": "shone",
+    "ppart": "shone",
+    "fr_tran": "briller",
+    "level": 1
+  },
+  {
+    "bv": "shoe",
+    "preterit": "shoed",
+    "ppart": "shod",
+    "fr_tran": "chausser",
+    "level": 3
+  },
+  {
+    "bv": "shoot",
+    "preterit": "shot",
+    "ppart": "shot",
+    "fr_tran": "tirer",
+    "level": 2
+  },
+  {
+    "bv": "show",
+    "preterit": "showed",
+    "ppart": "shown",
+    "fr_tran": "montrer",
+    "level": 1
+  },
+  {
+    "bv": "shrink",
+    "preterit": "shrank",
+    "ppart": "shrunk",
+    "fr_tran": "rétrécir",
+    "level": 2
+  },
+  {
+    "bv": "shut",
+    "preterit": "shut",
+    "ppart": "shut",
+    "fr_tran": "fermer",
+    "level": 1
+  },
+  {
+    "bv": "sing",
+    "preterit": "sang",
+    "ppart": "sung",
+    "fr_tran": "chanter",
+    "level": 1
+  },
+  {
+    "bv": "sink",
+    "preterit": "sank",
+    "ppart": "sunk",
+    "fr_tran": "couler",
+    "level": 2
+  },
+  {
+    "bv": "sit",
+    "preterit": "sat",
+    "ppart": "sat",
+    "fr_tran": "(s')asseoir",
+    "level": 1
+  },
+  {
+    "bv": "slay",
+    "preterit": "slew",
+    "ppart": "slain",
+    "fr_tran": "massacrer",
+    "level": 3
+  },
+  {
+    "bv": "sleep",
+    "preterit": "slept",
+    "ppart": "slept",
+    "fr_tran": "dormir",
+    "level": 1
+  },
+  {
+    "bv": "slide",
+    "preterit": "slid",
+    "ppart": "slid",
+    "fr_tran": "glisser",
+    "level": 2
+  },
+  {
+    "bv": "sling",
+    "preterit": "slung",
+    "ppart": "slung",
+    "fr_tran": "lancer",
+    "level": 2
+  },
+  {
+    "bv": "slit",
+    "preterit": "slit",
+    "ppart": "slit",
+    "fr_tran": "trancher/couper/fendre",
+    "level": 3
+  },
+  {
+    "bv": "smite",
+    "preterit": "smote",
+    "ppart": "smitten",
+    "fr_tran": "frapper",
+    "level": 3
+  },
+  {
+    "bv": "sow",
+    "preterit": "sowed",
+    "ppart": "sown",
+    "fr_tran": "semer",
+    "level": 2
+  },
+  {
+    "bv": "speak",
+    "preterit": "spoke",
+    "ppart": "spoken",
+    "fr_tran": "parler",
+    "level": 1
+  },
+  {
+    "bv": "speed",
+    "preterit": "sped",
+    "ppart": "sped",
+    "fr_tran": "aller vite",
+    "level": 2
+  },
+  {
+    "bv": "spell",
+    "preterit": "spelt",
+    "ppart": "spelt",
+    "fr_tran": "épeler",
+    "level": 1
+  },
+  {
+    "bv": "spend",
+    "preterit": "spent",
+    "ppart": "spent",
+    "fr_tran": "dépenser",
+    "level": 1
+  },
+  {
+    "bv": "spill",
+    "preterit": "spilled",
+    "ppart": "spilled",
+    "fr_tran": "renverser",
+    "level": 2
+  },
+  {
+    "bv": "spin",
+    "preterit": "spun",
+    "ppart": "spun",
+    "fr_tran": "essorer/tourner",
+    "level": 2
+  },
+  {
+    "bv": "spit",
+    "preterit": "spat",
+    "ppart": "spit",
+    "fr_tran": "cracher",
+    "level": 2
+  },
+  {
+    "bv": "split",
+    "preterit": "split",
+    "ppart": "split",
+    "fr_tran": "fendre/séparer",
+    "level": 2
+  },
+  {
+    "bv": "spoil",
+    "preterit": "spoilt",
+    "ppart": "spoilt",
+    "fr_tran": "gâcher",
+    "level": 2
+  },
+  {
+    "bv": "spread",
+    "preterit": "spread",
+    "ppart": "spread",
+    "fr_tran": "étaler/(se) répandre",
+    "level": 1
+  },
+  {
+    "bv": "spring",
+    "preterit": "sprang",
+    "ppart": "sprung",
+    "fr_tran": "bondir",
+    "level": 2
+  },
+  {
+    "bv": "stand",
+    "preterit": "stood",
+    "ppart": "stood",
+    "fr_tran": "se tenir debout",
+    "level": 1
+  },
+  {
+    "bv": "steal",
+    "preterit": "stole",
+    "ppart": "stolen",
+    "fr_tran": "voler/dérober",
+    "level": 1
+  },
+  {
+    "bv": "stick",
+    "preterit": "stuck",
+    "ppart": "stuck",
+    "fr_tran": "coller",
+    "level": 2
+  },
+  {
+    "bv": "sting",
+    "preterit": "stung",
+    "ppart": "stung",
+    "fr_tran": "piquer",
+    "level": 2
+  },
+  {
+    "bv": "stink",
+    "preterit": "stank",
+    "ppart": "stunk",
+    "fr_tran": "sentir mauvais",
+    "level": 2
+  },
+  {
+    "bv": "strew",
+    "preterit": "strewed",
+    "ppart": "strewed/strewn",
+    "fr_tran": "éparpiller",
+    "level": 3
+  },
+  {
+    "bv": "stride",
+    "preterit": "strod",
+    "ppart": "stridden",
+    "fr_tran": "arpenter",
+    "level": 3
+  },
+  {
+    "bv": "strike",
+    "preterit": "struck",
+    "ppart": "struck",
+    "fr_tran": "frapper",
+    "level": 1
+  },
+  {
+    "bv": "string",
+    "preterit": "strung",
+    "ppart": "strung",
+    "fr_tran": "enfiler",
+    "level": 2
+  },
+  {
+    "bv": "strive",
+    "preterit": "strove",
+    "ppart": "striven",
+    "fr_tran": "s'efforcer",
+    "level": 2
+  },
+  {
+    "bv": "swear",
+    "preterit": "swore",
+    "ppart": "sworn",
+    "fr_tran": "jurer",
+    "level": 2
+  },
+  {
+    "bv": "sweep",
+    "preterit": "swept",
+    "ppart": "swept",
+    "fr_tran": "balayer",
+    "level": 2
+  },
+  {
+    "bv": "swell",
+    "preterit": "swelled",
+    "ppart": "swollen",
+    "fr_tran": "enfler",
+    "level": 2
+  },
+  {
+    "bv": "swim",
+    "preterit": "swam",
+    "ppart": "swum",
+    "fr_tran": "nager",
+    "level": 1
+  },
+  {
+    "bv": "swing",
+    "preterit": "swung",
+    "ppart": "swung",
+    "fr_tran": "(se) balancer",
+    "level": 2
+  },
+  {
+    "bv": "take",
+    "preterit": "took",
+    "ppart": "taken",
+    "fr_tran": "prendre",
+    "level": 1
+  },
+  {
+    "bv": "teach",
+    "preterit": "taught",
+    "ppart": "taught",
+    "fr_tran": "enseigner",
+    "level": 1
+  },
+  {
+    "bv": "tear",
+    "preterit": "tore",
+    "ppart": "torn",
+    "fr_tran": "déchirer",
+    "level": 2
+  },
+  {
+    "bv": "tell",
+    "preterit": "told",
+    "ppart": "told",
+    "fr_tran": "dire",
+    "level": 1
+  },
+  {
+    "bv": "think",
+    "preterit": "thought",
+    "ppart": "thought",
+    "fr_tran": "penser",
+    "level": 1
+  },
+  {
+    "bv": "thrive",
+    "preterit": "thrived/throve",
+    "ppart": "thrived/thriven",
+    "fr_tran": "prospérer",
+    "level": 3
+  },
+  {
+    "bv": "throw",
+    "preterit": "threw",
+    "ppart": "thrown",
+    "fr_tran": "lancer",
+    "level": 1
+  },
+  {
+    "bv": "thrust",
+    "preterit": "thrust",
+    "ppart": "thrust",
+    "fr_tran": "pousser",
+    "level": 3
+  },
+  {
+    "bv": "tread",
+    "preterit": "trod",
+    "ppart": "trodden",
+    "fr_tran": "fouler/écraser",
+    "level": 3
+  },
+  {
+    "bv": "understand",
+    "preterit": "understood",
+    "ppart": "understood",
+    "fr_tran": "comprendre",
+    "level": 1
+  },
+  {
+    "bv": "undertake",
+    "preterit": "undertook",
+    "ppart": "undertaken",
+    "fr_tran": "entreprendre",
+    "level": 3
+  },
+  {
+    "bv": "unwind",
+    "preterit": "unwound",
+    "ppart": "unwound",
+    "fr_tran": "dérouler",
+    "level": 2
+  },
+  {
+    "bv": "uphold",
+    "preterit": "upheld",
+    "ppart": "upheld",
+    "fr_tran": "soutenir",
+    "level": 3
+  },
+  {
+    "bv": "upset",
+    "preterit": "upset",
+    "ppart": "upset",
+    "fr_tran": "bouleverser",
+    "level": 2
+  },
+  {
+    "bv": "wake",
+    "preterit": "woke",
+    "ppart": "woken",
+    "fr_tran": "(se) réveiller",
+    "level": 1
+  },
+  {
+    "bv": "wear",
+    "preterit": "wore",
+    "ppart": "worn",
+    "fr_tran": "porter (des vêtements)",
+    "level": 1
+  },
+  {
+    "bv": "weave",
+    "preterit": "wove",
+    "ppart": "woven",
+    "fr_tran": "tisser",
+    "level": 2
+  },
+  {
+    "bv": "wed",
+    "preterit": "wed",
+    "ppart": "wed",
+    "fr_tran": "marier",
+    "level": 2
+  },
+  {
+    "bv": "weep",
+    "preterit": "wept",
+    "ppart": "wept",
+    "fr_tran": "pleurer",
+    "level": 2
+  },
+  {
+    "bv": "wind",
+    "preterit": "wound",
+    "ppart": "wound",
+    "fr_tran": "enrouler",
+    "level": 2
+  },
+  {
+    "bv": "win",
+    "preterit": "won",
+    "ppart": "won",
+    "fr_tran": "gagner",
+    "level": 1
+  },
+  {
+    "bv": "withdraw",
+    "preterit": "withdrew",
+    "ppart": "withdrawn",
+    "fr_tran": "retirer",
+    "level": 2
+  },
+  {
+    "bv": "withhold",
+    "preterit": "withheld",
+    "ppart": "withheld",
+    "fr_tran": "retenir",
+    "level": 2
+  },
+  {
+    "bv": "withstand",
+    "preterit": "withstood",
+    "ppart": "withstood",
+    "fr_tran": "résister à",
+    "level": 2
+  },
+  {
+    "bv": "wring",
+    "preterit": "wrung",
+    "ppart": "wrung",
+    "fr_tran": "tordre",
+    "level": 2
+  },
+  {
+    "bv": "write",
+    "preterit": "wrote",
+    "ppart": "written",
+    "fr_tran": "écrire",
+    "level": 1
+  }
+]
