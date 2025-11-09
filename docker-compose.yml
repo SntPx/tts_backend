@@ -1,0 +1,106 @@
+#version: '3.8'
+
+services:
+  traefik:
+    image: traefik:v2.10
+    container_name: traefik
+    command:
+      - --api.insecure=true
+      - --providers.docker=true
+      - --entrypoints.web.address=:80
+      - --entrypoints.websecure.address=:443
+      - --certificatesresolvers.le.acme.httpchallenge=true
+      - --certificatesresolvers.le.acme.email=${LETSENCRYPT_EMAIL}
+      - --certificatesresolvers.le.acme.httpchallenge.entrypoint=web
+      - --certificatesresolvers.le.acme.storage=acme.json
+    ports:
+      - 80:80
+      - 443:443
+      - 8080:8080
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./traefik/traefik.yml:/traefik.yml:ro
+      - ./traefik/acme.json:/acme.json
+    restart: unless-stopped
+
+  minio:
+    image: minio/minio:RELEASE.2025-07-23T15-54-02Z
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+    volumes:
+      - ./data/minio:/data
+    command: server /data
+    ports:
+      - 9000:9000
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.minio.rule=Host(`${MINIO_HOST}`)"
+      - "traefik.http.routers.minio.entrypoints=websecure"
+      - "traefik.http.routers.minio.tls=true"
+      - "traefik.http.routers.minio.tls.certresolver=le"
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  api:
+    build: ./api
+    environment:
+      - DATABASE_URL=postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+      - MINIO_ENDPOINT=minio:9000
+      - MINIO_ACCESS_KEY=${MINIO_ROOT_USER}
+      - MINIO_SECRET_KEY=${MINIO_ROOT_PASSWORD}
+      - MINIO_SECURE=false
+      - MINIO_BUCKET=${MINIO_BUCKET}
+      - JWT_SECRET=${JWT_SECRET}
+      - SERVER_NAME=${SERVER_NAME}
+    depends_on:
+      - postgres
+      - minio
+    labels:
+      - "traefik.enable=true"
+      #- "traefik.http.routers.api.entrypoints=web"
+      #- "traefik.http.routers.api.rule=Host(`${SERVER_NAME}`) && PathPrefix(`/api`)"
+      #- "traefik.http.routers.api.entrypoints=web"
+      #- "traefik.http.routers.api.middlewares=redirect-to-https"
+      - "traefik.http.routers.api.rule=Host(`api.lv0.fr`)"
+      - "traefik.http.routers.api.entrypoints=websecure"
+      - "traefik.http.routers.api.tls=true"
+      - "traefik.http.routers.api.tls.certresolver=le"
+
+      # Middleware de redirection HTTP -> HTTPS
+      #- "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+
+      # Route HTTPS (port 443)
+      #- "traefik.http.routers.api-secure.rule=Host(`${SERVER_NAME}`) && PathPrefix(`/api`)"
+      #- "traefik.http.routers.api-secure.entrypoints=websecure"
+      #- "traefik.http.routers.api-secure.tls=true"
+      #- "traefik.http.routers.api-secure.tls.certresolver=le"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./api:/app
+      - ./audio_files:/app/audio_files:ro
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${POSTGRES_DATA}
+      o: bind
+  minio_data:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${MINIO_DATA}
+      o: bind
