@@ -3,6 +3,7 @@ from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
+    ENV: str = "dev"
     DATABASE_URL: str
     MINIO_ENDPOINT: str
     MINIO_ACCESS_KEY: str
@@ -13,6 +14,8 @@ class Settings(BaseSettings):
     JWT_ALGORITHM: str = "HS256"
     JWT_EXP_SECONDS: int = 3600
     SERVER_NAME: str = "localhost"
+    PROTOCOL: str = "http://"
+    URL_TTL: int = 3600
 
     class Config:
         env_file = ".env"

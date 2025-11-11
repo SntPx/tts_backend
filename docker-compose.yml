@@ -28,11 +28,18 @@ services:
     environment:
       MINIO_ROOT_USER: ${MINIO_ROOT_USER}
       MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+      MINIO_BUCKET: ${MINIO_BUCKET}
     volumes:
       - ./data/minio:/data
     command: server /data
     ports:
       - 9000:9000
+    healthcheck:
+      test: >
+        /bin/bash -c "curl -f ${PROTOCOL}${SERVER_NAME}/minio/health/ready || exit 1"
+      interval: 5s
+      timeout: 5s
+      retries: 10
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.minio.rule=Host(`${MINIO_HOST}`)"

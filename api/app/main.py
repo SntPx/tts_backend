@@ -1,15 +1,12 @@
 from fastapi import FastAPI, UploadFile, File, Depends, HTTPException
-from minio import Minio
 from io import BytesIO
+from app.minio_client import minio_client
 from . import models, crud, schemas, auth, config
 from .db_init import init_db, get_db
 from app.routers.audio import router as audio_router
 
 settings = config.settings
 init_db()
-
-minio_client = Minio(settings.MINIO_ENDPOINT, access_key=settings.MINIO_ACCESS_KEY,
-                     secret_key=settings.MINIO_SECRET_KEY, secure=False)
 
 if not minio_client.bucket_exists(settings.MINIO_BUCKET):
     minio_client.make_bucket(settings.MINIO_BUCKET)

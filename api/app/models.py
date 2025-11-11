@@ -1,7 +1,8 @@
+import os
 from sqlalchemy import Column, Integer, String, Float, DateTime
 from sqlalchemy.sql import func
 from sqlalchemy.ext.declarative import declarative_base
-from app.config import settings
+from app.minio_client import get_public_url
 
 Base = declarative_base()
 
@@ -19,6 +20,11 @@ class Audio(Base):
     owner = Column(String, nullable=True)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
 
-    @ property
+#    @ property
+#    def public_url(self):
+#        proto = os.getenv('PROTOCOL')
+#        return f"{proto}{settings.SERVER_NAME}/{settings.MINIO_BUCKET}/{self.minio_key}"
+
+    @property
     def public_url(self):
-        return f"https://{settings.SERVER_NAME}/{self.minio_key}"
+        return get_public_url(self.minio_key)

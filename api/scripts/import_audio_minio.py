@@ -7,6 +7,7 @@ from app.db_init import engine
 from app.models import Base, Audio
 from app.config import settings
 from pydub import AudioSegment
+import pathlib
 
 # --- MinIO and DB configuration ---
 minio_client = Minio(
@@ -45,9 +46,9 @@ def get_audio_duration(file_path):
         return None
 
 
-def upload_to_minio(file_path, country, sha1):
+def upload_to_minio(file_path, country, file_name):
     ext = file_path.split(".")[-1]
-    object_key = f"{country}/{sha1}.{ext}"
+    object_key = f"{country}/{file_name}.{ext}"
     with open(file_path, "rb") as f:
         data = BytesIO(f.read())
     minio_client.put_object(
@@ -74,11 +75,10 @@ def import_audio_folder(root_dir):
             if not os.path.isfile(file_path):
                 continue
 
-            #sha1 = compute_sha1(file_path)
-            sha1 = file_path
+            sha1 = pathlib.Path(file_path).stem
             existing = db.query(Audio).filter(Audio.id == sha1).first()
             if existing:
-                print(f"⏭️  Déjà présent : {file_path}")
+                print(f"⏭️  Already present : {file_path}")
                 continue
 
             duration = get_audio_duration(file_path)
@@ -95,11 +95,11 @@ def import_audio_folder(root_dir):
                 owner=None
             )
             db.add(audio_entry)
-            print(f"✅ Ajouté : {file_path} -> {minio_key}")
+            print(f"✅ Added : {file_path} -> {minio_key}")
 
     db.commit()
     db.close()
-    print("Import terminé.")
+    print("Finished importing.")
 
 
 if __name__ == "__main__":
