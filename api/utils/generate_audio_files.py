@@ -97,6 +97,7 @@ def generate_sound_files(verb_data: list, s_rate=24000, fmt='ogg'):
     pipeline_us = KPipeline(lang_code='a', repo_id='hexgrad/Kokoro-82M')
     logging.info('Creating pipeline for language code en-GB...')
     pipeline_gb = KPipeline(lang_code='b', repo_id='hexgrad/Kokoro-82M')
+    [PosixPath(FILE_DEST_PREFIX, sub_dir).mkdir(parents=True, exist_ok=True) for sub_dir in ('gb', 'us')]
 
     for verb in verb_data:
         spelling, gb_pron, us_pron = verb["w"], verb['ph']['gb'], verb["ph"]["us"]
@@ -104,6 +105,13 @@ def generate_sound_files(verb_data: list, s_rate=24000, fmt='ogg'):
         us_data = f'[{spelling}](/{us_pron}/)'
         gb_file_name = hash_file_name([spelling, gb_pron, "gb"])
         us_file_name = hash_file_name([spelling, us_pron, "us"])
+
+        if (PosixPath(FILE_DEST_PREFIX, 'gb', f'{gb_file_name}.{fmt}').exists() and
+                PosixPath(FILE_DEST_PREFIX, 'us', f'{us_file_name}.{fmt}').exists()):
+            logging.info(f'Files {gb_file_name}.{fmt} & {us_file_name}.{fmt} already exist. Skipping...')
+            print(f'Files [bold][yellow]{gb_file_name}.{fmt}[/bold][/yellow] & '
+                  f'[bold][yellow]{us_file_name}.{fmt}[/bold][/yellow] already exist. Skipping...')
+            continue
         gb_generator = pipeline_gb(
             gb_data,
             voice="bf_emma",
