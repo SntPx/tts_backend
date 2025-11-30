@@ -5,29 +5,43 @@ networks:
     name: webnet
     driver: bridge
 
-
+volumes:
+  postgres_data:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${POSTGRES_DATA}
+      o: bind
+  minio_data:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${MINIO_DATA}
+      o: bind
 
 services:
   traefik:
-    image: traefik:v2.10
+    image: traefik:v3.6.1
     container_name: traefik
     command:
       - --api.insecure=true
       - --providers.docker=true
       - --entrypoints.web.address=:80
-      #- --entrypoints.websecure.address=:443
-      #- --certificatesresolvers.le.acme.httpchallenge=true
-      #- --certificatesresolvers.le.acme.email=${LETSENCRYPT_EMAIL}
-      #- --certificatesresolvers.le.acme.httpchallenge.entrypoint=web
-      #- --certificatesresolvers.le.acme.storage=acme.json
+      - --entrypoints.websecure.address=:443
+      - --certificatesresolvers.le.acme.httpchallenge=true
+      - --certificatesresolvers.le.acme.email=${LETSENCRYPT_EMAIL}
+      - --certificatesresolvers.le.acme.httpchallenge.entrypoint=web
+      - --certificatesresolvers.le.acme.storage=acme.json
     ports:
-      - 80:80
-      - 443:443
+      - 8081:80
+      - 8444:443
       - 8080:8080
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - ./traefik/traefik.yml:/traefik.yml:ro
       - ./traefik/acme.json:/acme.json
+    networks:
+      - webnet
     restart: unless-stopped
 
   minio:
@@ -106,17 +120,3 @@ services:
       - ./api:/app
       - ./audio_files:/app/audio_files:ro
     restart: unless-stopped
-
-volumes:
-  postgres_data:
-    driver: local
-    driver_opts:
-      type: none
-      device: ${POSTGRES_DATA}
-      o: bind
-  minio_data:
-    driver: local
-    driver_opts:
-      type: none
-      device: ${MINIO_DATA}
-      o: bind
