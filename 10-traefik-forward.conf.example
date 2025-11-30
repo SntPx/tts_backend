@@ -1,0 +1,93 @@
+server {
+	listen 80;
+	server_name api.domain.tld;
+
+	location /.well-known/acme-challenge/ {
+		root /opt/www/well_known;
+	}
+
+	location / {
+                proxy_pass http://127.0.0.1:8081;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header X-Forwarded-Proto $scheme;
+        }
+}
+
+
+server {
+	listen 443 ssl;
+	server_name api.domain.tld;
+
+	ssl_protocols TLSv1.2 TLSv1.3;
+
+	# Fix 'The Logjam Attack'.
+	ssl_ciphers EECDH+CHACHA20:EECDH+AESGCM:EDH+AESGCM:AES256+EECDH;
+	ssl_prefer_server_ciphers on;
+	ssl_dhparam /etc/ssl/dh2048_param.pem;
+
+	# Greatly improve the performance of keep-alive connections over SSL.
+	# With this enabled, client is not necessary to do a full SSL-handshake for
+	# every request, thus saving time and cpu-resources.
+	ssl_session_cache shared:SSL:10m;
+
+	ssl_certificate /etc/letsencrypt/live/api.domain.tld/fullchain.pem;
+	ssl_certificate_key /etc/letsencrypt/live/api.domain.tld/privkey.pem;
+
+	location / {
+		proxy_pass http://127.0.0.1:8081;
+		proxy_set_header Host $host;
+		proxy_set_header X-Real-IP $remote_addr;
+		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+		proxy_set_header X-Forwarded-Proto $scheme;
+	}
+}
+
+
+server {
+        listen 80;
+        server_name audio.domain.tld;
+
+	location /.well-known/acme-challenge/ {
+                root /opt/www/well_known;
+        }
+
+
+        location / {
+                proxy_pass http://127.0.0.1:8081;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header X-Forwarded-Proto $scheme;
+        }
+}
+
+
+server {
+        listen 443 ssl;
+        server_name audio.domain.tld;
+
+        ssl_protocols TLSv1.2 TLSv1.3;
+
+        # Fix 'The Logjam Attack'.
+        ssl_ciphers EECDH+CHACHA20:EECDH+AESGCM:EDH+AESGCM:AES256+EECDH;
+        ssl_prefer_server_ciphers on;
+        ssl_dhparam /etc/ssl/dh2048_param.pem;
+
+        # Greatly improve the performance of keep-alive connections over SSL.
+        # With this enabled, client is not necessary to do a full SSL-handshake for
+        # every request, thus saving time and cpu-resources.
+        ssl_session_cache shared:SSL:10m;
+
+        ssl_certificate /etc/letsencrypt/live/audio.domain.tld/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/audio.domain.tld/privkey.pem;
+
+        location / {
+                proxy_pass http://127.0.0.1:8081;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header X-Forwarded-Proto $scheme;
+        }
+}
