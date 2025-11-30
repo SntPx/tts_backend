@@ -95,6 +95,7 @@ services:
     restart: unless-stopped
 
   api:
+    container_name: api
     build: ./api
     environment:
       - DATABASE_URL=postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
@@ -105,6 +106,8 @@ services:
       - MINIO_BUCKET=${MINIO_BUCKET}
       - JWT_SECRET=${JWT_SECRET}
       - SERVER_NAME=${SERVER_NAME}
+      - MINIO_HOST=${MINIO_HOST}
+      - ENV=${ENV}
     depends_on:
       - postgres
       - minio
@@ -114,22 +117,19 @@ services:
       #- "traefik.http.routers.api.rule=Host(`${SERVER_NAME}`) && PathPrefix(`/api`)"
       #- "traefik.http.routers.api.entrypoints=web"
       #- "traefik.http.routers.api.middlewares=redirect-to-https"
-      - "traefik.http.routers.api.rule=Host(`api.lv0.fr`)"
+      - "traefik.http.routers.api.rule=Host(`${SERVER_NAME}`)"
       - "traefik.http.routers.api.entrypoints=websecure"
       - "traefik.http.routers.api.tls=true"
       - "traefik.http.routers.api.tls.certresolver=le"
+      - "traefik.http.services.api.loadbalancer.server.port=8000"
 
-      # Middleware de redirection HTTP -> HTTPS
+      # HTTP -> HTTPS Middleware
       #- "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
-
-      # Route HTTPS (port 443)
-      #- "traefik.http.routers.api-secure.rule=Host(`${SERVER_NAME}`) && PathPrefix(`/api`)"
-      #- "traefik.http.routers.api-secure.entrypoints=websecure"
-      #- "traefik.http.routers.api-secure.tls=true"
-      #- "traefik.http.routers.api-secure.tls.certresolver=le"
-    ports:
-      - "8000:8000"
+    ports: []
+    networks:
+      - webnet
     volumes:
       - ./api:/app
-      - ./audio_files:/app/audio_files:ro
+      - ./audio_files:/app/audio_files
+      - ./IrregularVerbs.json:/app/IrregularVerbs.json:ro
     restart: unless-stopped
