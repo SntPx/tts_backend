@@ -1,4 +1,5 @@
 from minio import Minio
+from urllib.parse import urlparse, urlunparse
 from app.config import settings
 from datetime import timedelta
 
@@ -18,4 +19,7 @@ def get_public_url(audio_hash):
         expires=timedelta(seconds=settings.URL_TTL)
     )
 
-    return url
+    parsed = urlparse(url)
+    final_url = urlunparse(parsed._replace(netloc=settings.MINIO_HOST))
+
+    return final_url
