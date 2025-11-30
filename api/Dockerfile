@@ -8,6 +8,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 COPY requirements.txt .
 RUN pip install --upgrade pip setuptools wheel
+# In case pip install requirements aborts because no space is left on device, modify TMPDIR
+#RUN TMPDIR=path/to/larger/device/dir install --no-cache-dir -r requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app ./app
