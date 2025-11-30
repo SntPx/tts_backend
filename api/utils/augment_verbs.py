@@ -85,7 +85,7 @@ def main():
     p_headers = headers[0:3]
 
     # -- Step 1: Extract all words to be phonemized --
-    all_words = [w for verb in irrverbs for k,v in verb.items() if k in p_headers for w in v.split('/')]
+    all_words = [w for verb in irrverbs for k, v in verb.items() if k in p_headers for w in v.split('/')]
 
     # -- Step 2: Batch phonemizing
     _ = phonemize_batch(all_words)

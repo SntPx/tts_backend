@@ -78,7 +78,7 @@ def import_audio_folder(root_dir):
             sha1 = pathlib.Path(file_path).stem
             existing = db.query(Audio).filter(Audio.id == sha1).first()
             if existing:
-                print(f"⏭️  Already present : {file_path}")
+                print(f"Already present : {file_path}")
                 continue
 
             duration = get_audio_duration(file_path)
@@ -95,7 +95,7 @@ def import_audio_folder(root_dir):
                 owner=None
             )
             db.add(audio_entry)
-            print(f"✅ Added : {file_path} -> {minio_key}")
+            print(f"Added : {file_path} -> {minio_key}")
 
     db.commit()
     db.close()

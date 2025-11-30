@@ -6,6 +6,7 @@ class Settings(BaseSettings):
     ENV: str = "dev"
     DATABASE_URL: str
     MINIO_ENDPOINT: str
+    MINIO_HOST: str
     MINIO_ACCESS_KEY: str
     MINIO_SECRET_KEY: str
     MINIO_SECURE: bool = False
