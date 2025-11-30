@@ -75,13 +75,23 @@ services:
 
   postgres:
     image: postgres:15
+    ports: []
+    healthcheck:
+      test: [ "CMD", "pg_isready", "-U", "postgres" ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
       PGPASSWORD: ${POSTGRES_PASSWORD}
+      PGDATA: /data/postgres_data
+    networks:
+      - webnet
     volumes:
-      - ./data/postgres:/var/lib/postgresql/data
+      #- ./data/postgres:/var/lib/postgresql/data
+      - postgres_data:/data/postgres_data
     restart: unless-stopped
 
   api:
