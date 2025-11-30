@@ -46,10 +46,10 @@ Browse to ```https://api.yourdomain.tld/``` or ```https://audio.yourdomain.tld/`
 
 ### Troubleshooting
 If your containers cannot connect to the Internet, either during the building stage or when you try to generate the
-audio files, it is very likely that your firewall is blocking requests from and to your containers.
-You'll then need to modify your firewall rules to let traffic from and to br-* (all containers have an internal name
-starting with br-) and from and to docker0.
-If your system uses nftables add the following lines to /etc/nftables in your forward chain in your inet filer table,
+audio files, it is very likely that your firewall is blocking requests from and to your containers.<br>
+You'll then need to modify your firewall rules to let traffic from and to **br-*** (all containers have an internal name
+starting with br-) and from and to **docker0**.<br>
+If your system uses nftables, add the following lines to /etc/nftables in your forward chain in your inet filer table,
 after the global drop policy:
 ```
   # Docker -> Internet
